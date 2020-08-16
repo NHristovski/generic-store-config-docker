@@ -1,0 +1,16 @@
+server:
+  port: 9101
+
+security:
+  jwt:
+    uri: "/auth/**"
+    header: "Authorization"
+    prefix: "Bearer "
+    expiration: 86400 #{24*60*60}
+    secret: "Tmlrb2xhU2VjcmV0S2V5IA0K"
+
+encryption:
+  key: strong_security
+
+services:
+  userService: user-service
