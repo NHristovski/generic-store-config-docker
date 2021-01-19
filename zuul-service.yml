@@ -85,3 +85,6 @@ security:
     secret: Tmlrb2xhU2VjcmV0S2V5IA0K
 
 #logging:level:org:springframework:DEBUG
+spring:
+  zipkin:
+    baseUrl: http://34.107.100.32:9411/

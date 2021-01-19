@@ -14,3 +14,7 @@ encryption:
 
 services:
   userService: user-service
+
+spring:
+  zipkin:
+    baseUrl: http://34.107.100.32:9411/
