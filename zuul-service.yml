@@ -87,4 +87,4 @@ security:
 #logging:level:org:springframework:DEBUG
 spring:
   zipkin:
-    baseUrl: http://34.107.100.32:9411/
+    baseUrl: http://zipkin:9411/
