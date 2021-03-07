@@ -34,42 +34,52 @@ zuul:
 
   retryable: true
   # Map paths to product service
+  
+  
   routes:
     worker-service:
       path: /product/**
-      service-id: product-service
+      #service-id: product-service
+      url: http://product/
 
     rating-service:
       path: /ratings/**
-      service-id: rating-service
+      #service-id: rating-service
+      url: http://rating-service/
 
     inventory-service:
       path: /inventory/**
-      service-id: inventory-service
+      url: http://inventory-service/
+      #service-id: inventory-service
     # Map path to auth service
 
     shopping-cart-service:
       path: /shopping-cart/**
-      service-id: shopping-cart-service
+      url: http://shopping-cart-service/
+      #service-id: shopping-cart-service
 
     auth-service:
       path: /auth/**
-      service-id: auth-service
+      url: http://auth-service/
+      #service-id: auth-service
       strip-prefix: false
       sensitive-headers: Cookie,Set-Cookie
 
     # Map paths to users service
     user-service:
       path: /users/**
-      service-id: user-service
+      #service-id: user-service
+      url: http://user-service/
 
     payment-service:
       path: /payment/**
-      service-id: payment-service
+      #service-id: payment-service
+      url: http://payment-service/
 
     order-service:
       path: /orders/**
-      service-id: order-service
+      #service-id: order-service
+      url: http://order-service/
 
 
 #management:trace:http:include:AUTHORIZATION_HEADER,COOKIE_HEADERS,PRINCIPAL,REMOTE_ADDRESS,REQUEST_HEADERS,RESPONSE_HEADERS,SESSION_ID,TIME_TAKEN
