@@ -17,4 +17,4 @@ services:
 
 spring:
   zipkin:
-    baseUrl: http://my-lb-service:80
+    baseUrl: http://zipkin-service:80
